@@ -1,0 +1,47 @@
+{
+    "name": "gsmanager-cloud/prompts",
+    "type": "library",
+    "description": "Add beautiful and user-friendly forms to your command-line applications.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "GSManager\\Prompts\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-mbstring": "*",
+        "composer-runtime-api": "^2.2",
+        "symfony/console": "^6.2|^7.0"
+    },
+    "require-dev": {
+        "gsmanager-cloud/collections": "v1",
+        "phpstan/phpstan": "^1.11",
+        "pestphp/pest": "^2.3|^3.4",
+        "mockery/mockery": "^1.5",
+        "phpstan/phpstan-mockery": "^1.1"
+    },
+    "suggest": {
+        "ext-pcntl": "Required for the spinner to be animated."
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
